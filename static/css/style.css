@@ -1,0 +1,138 @@
+
+/*ivory:#fffff7, orange:#ffa500, honeydew:#f0fff0, rebeccapurple:#663399, indigo:#4b0082 */
+body {
+  color: black;
+  background-color: #fffff7;
+  margin: 10px auto;
+  padding: 0 0 50px 0;
+  display: block;
+  position: relative;
+  overflow-y: scroll;
+}
+
+nav {
+  opacity: 0.9;
+}
+
+nav:hover {
+  opacity: 1;
+  font-weight: 700;
+  background: linear-gradient(to right, red, #ffa500, yellow, yellowgreen, green);
+}
+
+div.well:hover {
+  background: #f0fff0;
+}
+
+div#sample-metadata.panel-body {
+  background: #f0fff0;
+}
+
+div.col-md-5:hover {
+  background: #f0fff0;
+}
+
+div.col-md-12:hover {
+  background: #f0fff0;
+}
+
+/* font-size: 0.1vw or 0.1vh is about 1px */
+hr {
+  border: 0.1vw solid #663399;
+}
+
+a[href^="#top"] {
+  font-size: 4.5vmin;
+  font-weight: 700;
+  text-align: center;
+  /* background: #ffa500; */
+  color: #ffa500;
+}
+
+h1[id^="ffFan"] {
+  font-family: 'Fantasy', 'serif';
+  color: #4b0082;
+  font-size: 6vw;
+}
+
+[id^="fsFan"] {
+  font-family: 'Fantasy', 'serif';
+  color: #4b0082;
+  font-size: 2.5vmin;
+}
+
+.jumbotron {
+  background-image: url("../images/bubbleplot_id946.jpg");
+  background-size: 33.33% auto;
+  text-align: center;
+}
+
+.fs2x {
+  font-size: 2.9vmin;
+}
+
+.fs1x {
+  font-size: 1.8vmin;
+  padding-top: 10px;
+}
+
+.fs1Rem {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#footer {
+  font-family: inherit;
+  font-size: 10px;
+  text-align: center;
+}
+
+.animeBb {
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-name: big-bang;
+}
+
+@keyframes big-bang {
+  from {
+    margin-top: 45%;
+    width: 175%;
+  }
+  to {
+    margin-top: 0%;
+    width: 25%;
+  }
+}
+
+/* customize select tag */
+select {
+  background-color: white;
+  display: inline-block;
+  border: solid;
+  border-radius: 0.5vw;
+  line-height: 1.5em;
+  margin-top: 10px;
+  /* padding: top | right | bottom | left */
+  padding: 0.2em 3em 0.2em 0.3em;
+  /* support standard & historical browsers Chrome/Safari/Edge/Firefox */
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -moz-appearance: none;
+}
+
+select.arrowUD {
+  background-image: url("../images/arrow_up_down.png");
+  background-position: 100%, 100% 0;
+  /* width:auto height:line-height + padding-top + padding-bottom */
+  background-size: auto calc(1.5em + 0.2em + 0.2em);
+  background-repeat: no-repeat;
+}
+
+select.arrowUD:focus {
+  border-color: #663399;
+  outline: 0;
+}
